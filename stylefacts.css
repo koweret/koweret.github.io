@@ -1,0 +1,44 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #200a30, #0a1630) fixed center;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  padding: 50px;
+  margin: auto;
+	font-size: 16px;
+}
+h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.main {
+  width: 75%;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+}
+.line {
+  font-size: 36px;
+	font-weight: bold;
+}
+.tablemain {
+	margin: auto;
+	width: 85%;
+}
+#tableplease tr td:first-child {
+		width: 20vw;
+}
+a {
+	color: lightblue;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+a:visited {
+	color: #cb89fa;
+}
+a:hover {
+    font-size: 24px;
+}
