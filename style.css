@@ -44,5 +44,8 @@ a:visited {
 	color: #cb89fa;
 }
 a:hover {
-  font-size: 24px;
+	font-size: 24px;
+}
+.center {
+	text-align: center;
 }
