@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Azure's Musings</title>
+	<link href="../css/index.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Funnel Sans' rel='stylesheet'>
+	</head>
+	
+	<body>
+		<div id="main">
+			<br>
+			<a class="smallbutton" href="../musings.html">go back!</a>
+			<h1 class="title">rust learning 1 - wow i did something</h1>
+			<p class="mini nomargin">rust is easier than you think | 07-3-2026</p>
+			<br>
+			<br>
+			<br>
+			<p>so... i may or may not have given into learning rust</p>
+			<p>uhhh anyways</p>
+			<h2>things i've made:</h2>
+			<ul>
+				<li>FizzBuzz:<br><br>
+				<code>fn main() {
+	for i in 1..=1000 {
+		if i % 15 == 0 {
+			println!("FizzBuzz!")
+		} else if i % 5 == 0 {
+			println!("Buzz!")
+		} else if i % 3 == 0 {
+			println!("Fizz!")
+		} else {
+			println!("{}", i)
+		};
+	};
+}</code></li>
+			</ul>
+			<ul>
+				<li>Goldbach's Conjecture Tester:<br><br>
+				<code>fn isprime(j: usize) -> bool {
+    let mut prime: bool = true;
+    let sqrt_j: usize = (j as f64).sqrt() as usize;
+    for k in 2..=sqrt_j {
+        if j % k == 0 {
+            prime = false;
+        };
+    };
+    prime
+}
+fn main() {
+    for i in 4..=20000 { // change number to change range
+        if i % 2 == 0 {
+            let mut sumfound: bool = false;
+            'checkprime: for j in 2..=i {
+                for k in 2..=i {
+                    if (j+k==i) && isprime(j) && isprime(k) {
+                        sumfound = true;
+                        println!("found sum for {}: {} + {}", i, j, k);
+                        break 'checkprime;
+                    };
+                };
+            };
+            if sumfound == false {
+                println!("either your code is wrong or {} literally disproves the goldbach conjecture", i)
+            };  
+        };
+    };
+}</code></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'vcrosdmono';
+  src: url('../fonts/vcrosdmono.woff') format('woff'), url('../fonts/vcrosdmono.ttf') format('truetype');
+}  
+.ultrakill {
+	font-family: 'vcrosdmono', monospace;
+	margin: 0px;
+}
+body {
+	background-color: #23164f;
+	font-family: "Funnel Sans", sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.mini {
+	color: #b0b0b0;
+	
+}
+#main {
+	width: 60vw;
+	min-height: 98vh;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+h1.title {
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+h2 {
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+ul { list-style: square; }
+
+.button {
+	margin: 0.5em 0px;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	font-size: 1em;
+	color: #23164f;
+	text-decoration: none;
+	transition: 0.25s;
+	align-text: center;
+	padding: auto;
+}
+.button:hover {
+	border: 0.25em white;
+}
+div.musing {
+	background-color: #4e4472;
+	margin-bottom: 5px;
+	border-radius: 0.5em;
+	height: 10em;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.nomargin {
+	margin: 0px; !important
+}
+.musingtext {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	width: 50%;
+	overflow: hidden;
+}
+.musingtext > * {
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	overflow: hidden;
+}
+img {
+	max-width: 100%;
+}
+.musingimage {
+	margin-left: auto;
+	padding: 0px;
+	flex-shrink: 0;
+	border-radius: 0px 0.5em 0.5em 0px;
+	min-height: 10em;
+	max-width: 50%;
+	filter: grayscale(100%);
+	transition: 0.3s;
+}
+div.musing:hover {
+	background-color: #382d60;
+	cursor: pointer;
+}
+div.musing:hover .musingimage {
+	filter: grayscale(0%);
+}
+.center {
+	margin: 0px;
+	text-align: center;
+	align-items: center;
+}
+.buttons {
+	width: 100%;
+	display: flex;
+}
+.buttonholder {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	margin: 0.5em 0.5em;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	transition: 0.3s;
+}
+.buttonholder:hover {
+	border: 0.25em white;
+	background-color: #4e4472;
+	color: white;
+	cursor: pointer;
+}
+.buttonholder:hover a {
+	color: white;
+}
+.smallbutton {
+	background-color: white;
+	margin: 0.5em 0px;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	font-size: 1em;
+	color: #23164f;
+	text-decoration: none;
+	transition: 0.25s;
+	align-text: center;
+	padding: auto;
+}
+.smallbutton:hover {
+	background-color: #4e4472;
+	border: 0.25em white;
+	color: white;
+	cursor: pointer;
+}
+.footer {
+	position: fixed;
+	height: 1.5em;
+	bottom: 1.5em;
+}
+code {
+  white-space: pre-wrap;
+  font-family: Consolas, monospace;
+  color: white;
+  background-color: #101010;
+  padding: 2px;
+  text-align: left;
+  display: block;
+  tab-size: 4;
+}
+.blinkies {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+}
