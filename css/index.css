@@ -7,7 +7,7 @@
 	margin: 0px;
 }
 body {
-	background-color: #23164f;
+	background-color: #201b2e;
 	font-family: "Funnel Sans", sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -17,6 +17,7 @@ body {
 	
 }
 #main {
+	background-color: #261f3d;
 	width: 60vw;
 	min-height: 98vh;
 	color: #ffffff;
@@ -36,13 +37,8 @@ h2 {
 	font-size: 35px;
 	margin-bottom: 0px;
 }
-center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
 
-ul { list-style: square; }
+ul { list-style: square; text-align: left; }
 
 .button {
 	margin: 0.5em 0px;
@@ -54,9 +50,6 @@ ul { list-style: square; }
 	transition: 0.25s;
 	align-text: center;
 	padding: auto;
-}
-.button:hover {
-	border: 0.25em white;
 }
 div.musing {
 	background-color: #4e4472;
@@ -92,6 +85,7 @@ img {
 	border-radius: 0px 0.5em 0.5em 0px;
 	min-height: 10em;
 	max-width: 50%;
+	object-fit: cover;
 	filter: grayscale(100%);
 	transition: 0.3s;
 }
@@ -107,6 +101,11 @@ div.musing:hover .musingimage {
 	text-align: center;
 	align-items: center;
 }
+.centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .buttons {
 	width: 100%;
 	display: flex;
@@ -115,7 +114,7 @@ div.musing:hover .musingimage {
 	width: 100%;
 	text-align: center;
 	background-color: white;
-	margin: 0.5em 0.5em;
+	margin: 0.5em;
 	padding: 0.5em;
 	border-radius: 0.5em;
 	transition: 0.3s;
@@ -165,8 +164,55 @@ code {
 .blinkies {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
 }
 .blinkie {
 	text-decoration: none;
+	min-width: 88px;
+	margin: 2px;
+}
+.hyperlink {
+	color: white;
+}
+.bentoholder {
+	width: 100%;
+	padding: 0.5em;
+}
+.bentoholder::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.bentocolumn {
+	box-sizing: border-box;
+	float: left;
+	width: 25%;
+	padding: 0.25em;
+}
+.bentoitem {
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0.5em 0.25em;
+	width: 100%;
+	height: 100px;
+	padding: 0px 1em;
+	border: 3px solid #4e4472;
+	border-radius: 10px;
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+	padding: auto;
+	overflow: hidden;
+}
+.tall {
+	height: 200px;
+}
+
+td {
+	text-align: center;
+	padding: 2px;
+	width: 50%;
 }
